@@ -1,0 +1,31 @@
+{
+  "name": "next_sandbox",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 9990",
+    "build": "next build && find ./.next/static -name '*.map' -delete",
+    "start": "next start -p 80",
+    "start:debug": "next start -p 9990",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "fmt": "prettier './**/*.{js,ts,tsx,json,yml,yaml,scss}' --ignore-path .gitignore --check",
+    "fmt:fix": "prettier './**/*.{js,ts,tsx,json,yml,yaml,scss}' --ignore-path .gitignore --check --write",
+    "stylelint": "stylelint scss 'src/**/*.scss'",
+    "stylelint:fix": "stylelint --fix scss 'src/**/*.scss'"
+  },
+  "dependencies": {
+    "next": "15.0.3",
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "19.0.0-rc-66855b96-20241106"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.3",
+    "prettier": "^3.3.3",
+    "typescript": "^5"
+  }
+}
