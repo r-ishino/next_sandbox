@@ -1,9 +1,16 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Image from 'next/image';
+import styles from './page.module.css';
+import { isBlank, Button } from 'linaria_sandbox';
 
-export default function Home() {
+import 'linaria_sandbox/lib/index.css';
+
+export default async function Home() {
   return (
     <div className={styles.page}>
+      <div>
+        aaa
+        <Button />
+      </div>
       <main className={styles.main}>
         <Image
           className={styles.logo}
